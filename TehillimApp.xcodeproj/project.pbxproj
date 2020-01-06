@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		96B3BB2F23C3054E006B7CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB2E23C3054E006B7CF3 /* AppDelegate.swift */; };
 		96B3BB3123C3054E006B7CF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB3023C3054E006B7CF3 /* SceneDelegate.swift */; };
-		96B3BB3323C3054E006B7CF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB3223C3054E006B7CF3 /* ViewController.swift */; };
 		96B3BB3623C3054E006B7CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B3BB3423C3054E006B7CF3 /* Main.storyboard */; };
 		96B3BB3923C3054E006B7CF3 /* TehillimApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB3723C3054E006B7CF3 /* TehillimApp.xcdatamodeld */; };
 		96B3BB3B23C30552006B7CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B3BB3A23C30552006B7CF3 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		96B3BB2B23C3054E006B7CF3 /* TehillimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TehillimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B3BB2E23C3054E006B7CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B3BB3023C3054E006B7CF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96B3BB3223C3054E006B7CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96B3BB3523C3054E006B7CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96B3BB3823C3054E006B7CF3 /* TehillimApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TehillimApp.xcdatamodel; sourceTree = "<group>"; };
 		96B3BB3A23C30552006B7CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +56,79 @@
 		96B3BB2D23C3054E006B7CF3 /* TehillimApp */ = {
 			isa = PBXGroup;
 			children = (
-				96B3BB2E23C3054E006B7CF3 /* AppDelegate.swift */,
-				96B3BB3023C3054E006B7CF3 /* SceneDelegate.swift */,
-				96B3BB3223C3054E006B7CF3 /* ViewController.swift */,
-				96B3BB3423C3054E006B7CF3 /* Main.storyboard */,
-				96B3BB3A23C30552006B7CF3 /* Assets.xcassets */,
-				96B3BB3C23C30552006B7CF3 /* LaunchScreen.storyboard */,
-				96B3BB3F23C30552006B7CF3 /* Info.plist */,
-				96B3BB3723C3054E006B7CF3 /* TehillimApp.xcdatamodeld */,
+				96B3BB4523C305F8006B7CF3 /* Application Management */,
+				96B3BB4E23C30791006B7CF3 /* Commun */,
+				96B3BB4B23C3076D006B7CF3 /* Modules */,
+				96B3BB4823C30729006B7CF3 /* Resources */,
+				96B3BB4723C3071A006B7CF3 /* xcdatamodeld */,
+				96B3BB4623C30616006B7CF3 /* Supporting Files */,
 			);
 			path = TehillimApp;
+			sourceTree = "<group>";
+		};
+		96B3BB4523C305F8006B7CF3 /* Application Management */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB2E23C3054E006B7CF3 /* AppDelegate.swift */,
+				96B3BB3023C3054E006B7CF3 /* SceneDelegate.swift */,
+			);
+			path = "Application Management";
+			sourceTree = "<group>";
+		};
+		96B3BB4623C30616006B7CF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB3C23C30552006B7CF3 /* LaunchScreen.storyboard */,
+				96B3BB3F23C30552006B7CF3 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96B3BB4723C3071A006B7CF3 /* xcdatamodeld */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB3723C3054E006B7CF3 /* TehillimApp.xcdatamodeld */,
+			);
+			path = xcdatamodeld;
+			sourceTree = "<group>";
+		};
+		96B3BB4823C30729006B7CF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB4A23C30745006B7CF3 /* Storyboards */,
+				96B3BB4923C30738006B7CF3 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96B3BB4923C30738006B7CF3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB3A23C30552006B7CF3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		96B3BB4A23C30745006B7CF3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB3423C3054E006B7CF3 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		96B3BB4B23C3076D006B7CF3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		96B3BB4E23C30791006B7CF3 /* Commun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commun;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B3BB3323C3054E006B7CF3 /* ViewController.swift in Sources */,
 				96B3BB3923C3054E006B7CF3 /* TehillimApp.xcdatamodeld in Sources */,
 				96B3BB2F23C3054E006B7CF3 /* AppDelegate.swift in Sources */,
 				96B3BB3123C3054E006B7CF3 /* SceneDelegate.swift in Sources */,
@@ -220,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WDRL2HN7M;
-				INFOPLIST_FILE = TehillimApp/Info.plist;
+				INFOPLIST_FILE = "TehillimApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WDRL2HN7M;
-				INFOPLIST_FILE = TehillimApp/Info.plist;
+				INFOPLIST_FILE = "TehillimApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
