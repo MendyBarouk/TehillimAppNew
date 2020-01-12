@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9616DECB23CAF9B8009284C3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616DECA23CAF9B8009284C3 /* HomeCollectionViewController.swift */; };
+		9616DECE23CAFA36009284C3 /* HomeDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616DECD23CAFA36009284C3 /* HomeDataController.swift */; };
+		9616DED223CAFABF009284C3 /* ReaderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616DED123CAFABF009284C3 /* ReaderCollectionViewController.swift */; };
+		9616DED523CAFAFF009284C3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616DED423CAFAFF009284C3 /* SettingsTableViewController.swift */; };
 		96B3BB2F23C3054E006B7CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB2E23C3054E006B7CF3 /* AppDelegate.swift */; };
 		96B3BB3123C3054E006B7CF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB3023C3054E006B7CF3 /* SceneDelegate.swift */; };
 		96B3BB3623C3054E006B7CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B3BB3423C3054E006B7CF3 /* Main.storyboard */; };
 		96B3BB3923C3054E006B7CF3 /* TehillimApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB3723C3054E006B7CF3 /* TehillimApp.xcdatamodeld */; };
 		96B3BB3B23C30552006B7CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B3BB3A23C30552006B7CF3 /* Assets.xcassets */; };
 		96B3BB3E23C30552006B7CF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B3BB3C23C30552006B7CF3 /* LaunchScreen.storyboard */; };
+		96B3BB5123C30FAA006B7CF3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB5023C30FAA006B7CF3 /* CoreDataStack.swift */; };
+		96B3BB5423C3149A006B7CF3 /* ExtensionNSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B3BB5323C3149A006B7CF3 /* ExtensionNSManagedObjectContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9616DECA23CAF9B8009284C3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		9616DECD23CAFA36009284C3 /* HomeDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataController.swift; sourceTree = "<group>"; };
+		9616DED123CAFABF009284C3 /* ReaderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderCollectionViewController.swift; sourceTree = "<group>"; };
+		9616DED423CAFAFF009284C3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		96B3BB2B23C3054E006B7CF3 /* TehillimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TehillimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B3BB2E23C3054E006B7CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96B3BB3023C3054E006B7CF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,8 @@
 		96B3BB3A23C30552006B7CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96B3BB3D23C30552006B7CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96B3BB3F23C30552006B7CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B3BB5023C30FAA006B7CF3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		96B3BB5323C3149A006B7CF3 /* ExtensionNSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNSManagedObjectContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9616DEC723CAF99C009284C3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9616DEC823CAF99F009284C3 /* View Controller */,
+				9616DECC23CAFA2B009284C3 /* Data Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9616DEC823CAF99F009284C3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9616DECA23CAF9B8009284C3 /* HomeCollectionViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		9616DECC23CAFA2B009284C3 /* Data Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9616DECD23CAFA36009284C3 /* HomeDataController.swift */,
+			);
+			path = "Data Controller";
+			sourceTree = "<group>";
+		};
+		9616DECF23CAFAA7009284C3 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				9616DED023CAFAAF009284C3 /* View Controller */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		9616DED023CAFAAF009284C3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9616DED123CAFABF009284C3 /* ReaderCollectionViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		9616DED323CAFAEA009284C3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9616DED623CAFB02009284C3 /* View Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9616DED623CAFB02009284C3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9616DED423CAFAFF009284C3 /* SettingsTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		96B3BB2223C3054E006B7CF3 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +189,9 @@
 		96B3BB4B23C3076D006B7CF3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				9616DEC723CAF99C009284C3 /* Home */,
+				9616DECF23CAFAA7009284C3 /* Reader */,
+				9616DED323CAFAEA009284C3 /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -127,8 +199,26 @@
 		96B3BB4E23C30791006B7CF3 /* Commun */ = {
 			isa = PBXGroup;
 			children = (
+				96B3BB5223C31483006B7CF3 /* Extension */,
+				96B3BB4F23C30F80006B7CF3 /* Core Data Stack */,
 			);
 			path = Commun;
+			sourceTree = "<group>";
+		};
+		96B3BB4F23C30F80006B7CF3 /* Core Data Stack */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB5023C30FAA006B7CF3 /* CoreDataStack.swift */,
+			);
+			path = "Core Data Stack";
+			sourceTree = "<group>";
+		};
+		96B3BB5223C31483006B7CF3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96B3BB5323C3149A006B7CF3 /* ExtensionNSManagedObjectContext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B3BB5423C3149A006B7CF3 /* ExtensionNSManagedObjectContext.swift in Sources */,
 				96B3BB3923C3054E006B7CF3 /* TehillimApp.xcdatamodeld in Sources */,
 				96B3BB2F23C3054E006B7CF3 /* AppDelegate.swift in Sources */,
+				9616DECB23CAF9B8009284C3 /* HomeCollectionViewController.swift in Sources */,
 				96B3BB3123C3054E006B7CF3 /* SceneDelegate.swift in Sources */,
+				9616DED223CAFABF009284C3 /* ReaderCollectionViewController.swift in Sources */,
+				96B3BB5123C30FAA006B7CF3 /* CoreDataStack.swift in Sources */,
+				9616DECE23CAFA36009284C3 /* HomeDataController.swift in Sources */,
+				9616DED523CAFAFF009284C3 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
